@@ -1,8 +1,11 @@
 n=int(input())
-ls=list(map(int,input().split()))
-for i in ls:
+c=1
+lst=list(map(int,input().split()))
+for i in lst:
     if i>=n:
-        print("NO")
+        c=0
         break
-else:
+if(c==1):
     print("YES")
+else:
+    print("NO")
