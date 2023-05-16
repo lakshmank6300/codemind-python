@@ -1,11 +1,9 @@
 t=int(input())
-for t in range(0,t):
+for i in range(1,t+1):
     n,a,b,k=map(int,input().split())
-    i=n/(a*b)
-    u=n/a+n/b-i
-    ans=u-i
-    if ans>=k:
+    inter=n/(a*b)
+    u=n/a+n/b-inter
+    if(u>=k):
         print("Win")
     else:
         print("Lose")
-    
