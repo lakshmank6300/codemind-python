@@ -1,12 +1,9 @@
-def rev(n):
-    s=0
-    while(n!=0):
-        r=n%10
-        s=s*10+r
-        n=n//10
-    return s
-n=int(input())
-if(n**2==rev(rev(n)**2)):
+n=(input())
+n1=n[::-1]
+sn=int(n)**2
+sn1=str(int(n1)**2)
+revsn1=sn1[::-1]
+if(str(sn)==str(revsn1)):
     print(True)
 else:
     print(False)
