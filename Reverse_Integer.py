@@ -1,10 +1,10 @@
 n=int(input())
-if(n<0):
-    print("-",end="")
-    n=-(n)
 s=0
+if(int(n)<0):
+    n=-n
+    print("-",end="")
 while(n!=0):
     r=n%10
-    s=s*10+r
+    s=10*s+r
     n=n//10
 print(s)
