@@ -8,6 +8,7 @@ n=int(input())
 ls=list(map(int,input().split()))
 p=1
 np=1
+n=1
 for i in ls:
     if(prime(i)):
         p*=i
